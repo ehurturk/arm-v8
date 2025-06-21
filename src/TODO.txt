@@ -1,0 +1,12 @@
+In emulator/execute/register_instruction.c: 
+  - Line 95: for result, a, b: 
+  warning: format ‘%llu’ expects argument of type ‘long long unsigned int’, but argument 6 has type ‘u64’ {aka ‘long unsigned int’} [-Wformat=]
+   95 |    fprintf(stderr, "bit %d  %llu a:%llu b:%llu\n",
+      |                                           ~~~^
+      |                                              |
+      |                                              long long unsigned int
+
+
+
+
+MOVE ALIAS SUBSTITUTION TO PARSER/TOKENIZER
